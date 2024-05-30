@@ -11,7 +11,7 @@ int main(){
                 cout<<" ";
             }
             else if(col<=n-1){
-                cout<<"c";
+                cout<<c;
                 c++;
             }
             else if (col==n){
