@@ -18,7 +18,7 @@ bool print_Prime(int number){
 int main(){
     int number;
     cin>> number;
-    for (int i = 2;i<=number; i++)
+    for (int i = 2;i <=number; i++)
     {
         
         bool isPrime = print_Prime(i);
@@ -26,7 +26,7 @@ int main(){
         {
             cout<<i<<" ";
             
-                    }
+        }
         
     }
     
