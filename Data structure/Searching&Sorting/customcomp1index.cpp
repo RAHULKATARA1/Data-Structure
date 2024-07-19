@@ -14,8 +14,8 @@ void printvv(vector<vector<int> > &v) {
 }
 
 bool mycompfor1stIndex(vector<int> &a, vector<int> &b) {
-  return a[1] > b[1]; // dsc order
-  // return a[1] < b[1]; // asc order
+  return a[1] > b[1]; // dsc order // decreasing order
+  // return a[1] < b[1]; // asc order // increasing ordergi
 }
 
 int main() {
