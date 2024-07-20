@@ -14,7 +14,7 @@ int stringlength(char ch[], int size){
     }
     return length; */
     int index=0;
-    while(ch[index]!='\0'){
+    while(ch[index]! ='\0'){
         index++;
     }
     return index;
