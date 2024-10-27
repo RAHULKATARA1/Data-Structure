@@ -22,7 +22,7 @@ void nqueen(int k, int n) {
             x[k] = i;  // Place queen at row k, column i
             if (k == n) {  // If all queens are placed, print the solution
                 for (int r = 1; r <= n; r++) {
-                    cout << x[r] << "   ";  // Print the column positions of queens
+                    cout << x[r] << " ";  // Print the column positions of queens
                 }
                 cout << endl;
             } else {
@@ -37,15 +37,8 @@ int main() {
     cout << "Enter the number of queens: ";
     cin >> n;
 
-    if (n == 1) {
-        // For n=1, only one solution exists: placing the single queen
-        cout << "1\n";
-    } else if (n == 2 || n == 3) {
-        // There are no valid solutions for n=2 or n=3
-        cout << "No solution exists for " << n << "-Queens problem.\n";
-    } else {
-        // For n>=4, find and print all solutions
-        cout << "Solutions for " << n << "-Queens problem:\n";
+    // For n >= 4, find and print all solutions
+    if (n >= 1) {
         nqueen(1, n);  // Start solving from the first row
     }
 
