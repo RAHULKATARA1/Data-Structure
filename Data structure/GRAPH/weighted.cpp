@@ -5,7 +5,7 @@ using namespace std;
 
 class Graph {
 public:
-    unordered_map<int, list<pair<int, int>>> adjList; // Corrected declaration
+    unordered_map<int, list<pair<int, int> > adjList; // Corrected declaration
 
     void addEdge(int u, int v, int wt, bool direction) {
         // direction = 0 -> undirected

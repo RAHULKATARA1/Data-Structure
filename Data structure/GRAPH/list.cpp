@@ -5,7 +5,7 @@ using namespace std;
 
 class Graph{
     public:
-   unordered_map<int, list<int>> adjList;
+   unordered_map<int, list<int> > adjList;
     void addEdge(int u, int v, bool direction){
         // direction -> 0 -> undirected graph
         // direction -> 1 -> directed graph
@@ -25,15 +25,7 @@ class Graph{
         printadjList();
         cout<<endl;
     }
-    void printadjList(){
-        for(auto i : adjList){
-            cout<< i.first << "-> {";
-            for(auto neighbour: i.second){
-                cout<<neighbour<<", ";
-            }
-            cout<<"}"<<endl;
-        }
-    }
+  
 };
 int main(){
     Graph g;
